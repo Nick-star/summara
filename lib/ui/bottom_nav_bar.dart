@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../pages/search_page.dart';
 import '../config/config.dart';
+import '../pages/my_library_page.dart';
 
 class BottomNavBar extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   static List<Widget> _widgetOptions = <Widget>[
     Text('Main Page'),
     SearchPage(),
-    Text('My Library'),
+    MyLibraryPage(),
   ];
 
   void _onItemTapped(int index) {
